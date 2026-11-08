@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Khene Sipaserd · Links</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&family=Noto+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F2E7;--card:#FFFDF7;--ink:#2F2442;--mute:#6F6585;--pu:#7B5EA7;--pu-s:#E7DEF5;--gr:#6FA36B;--gr-s:#DDEBD8;--line:#E4DAC6;--cta:#5B3F8C;--on:#fff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1E1730;--card:#2A2140;--ink:#F3ECDD;--mute:#B3A8C9;--pu:#B79AE6;--pu-s:#3A2E5A;--gr:#8FC38A;--gr-s:#2E4033;--line:#3C3257;--cta:#C9B2F2;--on:#1E1730}}
+:root[data-theme="dark"]{--bg:#1E1730;--card:#2A2140;--ink:#F3ECDD;--mute:#B3A8C9;--pu:#B79AE6;--pu-s:#3A2E5A;--gr:#8FC38A;--gr-s:#2E4033;--line:#3C3257;--cta:#C9B2F2;--on:#1E1730}
+*{box-sizing:border-box}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font-family:"Noto Sans Thai","Fredoka",system-ui,sans-serif;line-height:1.5}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+main{position:relative;z-index:1;max-width:460px;margin:0 auto;padding:28px 18px 48px}
+.top{display:flex;justify-content:flex-end}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:3px solid var(--pu);outline-offset:3px}
+.ghost{background:var(--card);border:1.5px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.85rem}
+.hero{text-align:center;margin-top:6px}
+.av{width:104px;height:104px;border:0;background:none;padding:0;transition:transform .2s}
+.av:active{transform:scale(.92) rotate(-4deg)}
+h1{font-family:"Fredoka","Noto Sans Thai",sans-serif;font-weight:600;font-size:1.9rem;margin:10px 0 0;letter-spacing:.01em}
+.handle{color:var(--pu);font-weight:600;margin:0}
+.bio{color:var(--mute);margin:8px auto 0;max-width:30ch}
+.cta{display:block;width:100%;margin:22px 0 14px;border:0;border-radius:18px;padding:16px;background:var(--cta);color:var(--on);font-weight:600;font-size:1.1rem;box-shadow:0 6px 0 color-mix(in srgb,var(--cta) 55%,#000);transition:transform .12s,box-shadow .12s}
+.cta:active{transform:translateY(4px);box-shadow:0 2px 0 color-mix(in srgb,var(--cta) 55%,#000)}
+.links{display:grid;gap:10px}
+.link{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:var(--card);border:1.5px solid var(--line);text-decoration:none;color:inherit;transition:transform .15s,border-color .15s;opacity:0;animation:in .5s ease forwards}
+.link:hover{transform:translateY(-2px);border-color:var(--pu)}
+.link.g:hover{border-color:var(--gr)}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.badge{flex:none;width:42px;height:42px;border-radius:13px;display:grid;place-items:center;font-family:Fredoka,sans-serif;font-weight:600;background:var(--pu-s);color:var(--pu)}
+.g .badge{background:var(--gr-s);color:var(--gr)}
+.t{flex:1;min-width:0}.t b{display:block;font-weight:600}.t span{color:var(--mute);font-size:.88rem}
+.chip{font-family:Fredoka,sans-serif;font-size:.85rem;color:var(--mute);background:var(--bg);border-radius:999px;padding:2px 10px;transition:transform .2s}
+.chip.bump{transform:scale(1.3)}
+.row{display:flex;gap:10px;margin-top:16px}
+.row .ghost{flex:1;padding:11px;border-radius:14px;font-weight:500}
+.panel{margin-top:14px;background:var(--card);border:1.5px solid var(--line);border-radius:18px;padding:16px}
+.panel[hidden]{display:none}
+.panel h2{font-size:1rem;margin:0 0 2px}.panel small{color:var(--mute)}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}
+.kpi div{background:var(--bg);border-radius:12px;padding:10px 6px;text-align:center}
+.kpi b{display:block;font-family:Fredoka,sans-serif;font-size:1.25rem;color:var(--pu)}
+.kpi span{font-size:.75rem;color:var(--mute)}
+.bars{display:flex;align-items:flex-end;gap:8px;height:90px;margin:8px 0 4px}
+.bars i{flex:1;background:var(--gr);border-radius:8px 8px 3px 3px;height:0;transition:height .7s cubic-bezier(.2,.8,.2,1)}
+.days{display:flex;gap:8px;font-size:.75rem;color:var(--mute);text-align:center}.days span{flex:1}
+.hb{margin-top:12px;font-size:.85rem}
+.hb div{display:flex;align-items:center;gap:8px;margin-top:6px}
+.hb em{font-style:normal;width:96px;flex:none;color:var(--mute);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hb u{flex:1;height:8px;border-radius:9px;background:var(--bg);overflow:hidden;display:block}
+.hb u s{display:block;height:100%;background:var(--pu);border-radius:9px;transition:width .5s}
+.foot{text-align:center;color:var(--mute);font-size:.8rem;margin-top:26px}
+dialog{border:0;border-radius:22px;padding:22px;max-width:380px;width:calc(100% - 32px);background:var(--card);color:var(--ink)}
+dialog::backdrop{background:rgba(30,23,48,.55)}
+dialog h2{margin:0 0 4px;font-family:Fredoka,"Noto Sans Thai",sans-serif}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.opt{border:1.5px solid var(--line);background:var(--bg);border-radius:999px;padding:7px 14px}
+.opt[aria-pressed="true"]{background:var(--pu);border-color:var(--pu);color:var(--on)}
+.dl a,.dl button{display:block;width:100%;margin-top:8px;padding:12px;border-radius:14px;border:1.5px solid var(--line);background:var(--bg);text-align:center;text-decoration:none;color:inherit;font-weight:500}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;transition:.3s;z-index:9;pointer-events:none}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){.link{animation:none;opacity:1}*{transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<main>
+  <div class="top"><button class="ghost" id="theme" aria-label="สลับโหมดสว่าง/มืด">☀︎ / ☾</button></div>
+  <section class="hero">
+    <button class="av" id="av" aria-label="แตะเพื่อปล่อยเอฟเฟกต์">
+      <svg viewBox="0 0 104 104" width="104" height="104" aria-hidden="true">
+        <path d="M18 44 L22 8 L48 24Z" fill="#7B5EA7"/><path d="M86 44 L82 8 L56 24Z" fill="#7B5EA7"/>
+        <path d="M24 36 L26 17 L40 26Z" fill="#E7DEF5"/><path d="M80 36 L78 17 L64 26Z" fill="#E7DEF5"/>
+        <circle cx="52" cy="58" r="38" fill="#7B5EA7"/>
+        <ellipse cx="38" cy="56" rx="5" ry="7" fill="#F7F2E7"/><ellipse cx="66" cy="56" rx="5" ry="7" fill="#F7F2E7"/>
+        <circle cx="39" cy="57" r="2.5" fill="#2F2442"/><circle cx="67" cy="57" r="2.5" fill="#2F2442"/>
+        <path d="M47 68 h10 l-5 6z" fill="#8DBF88"/><path d="M52 74 q-6 8 -12 4 M52 74 q6 8 12 4" stroke="#F7F2E7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <h1>Khene Sipaserd</h1>
+    <p class="handle">@Khene</p>
+    <p class="bio">Hi Everyone My name is Khene</p>
+  </section>
+
+  <button class="cta" id="cta">จ้างฉัน / ติดต่อ</button>
+  <nav class="links" id="links" aria-label="ลิงก์โซเชียลมีเดีย"></nav>
+
+  <div class="row">
+    <button class="ghost" id="share">แชร์หน้านี้</button>
+    <button class="ghost" id="copy">คัดลอกลิงก์</button>
+    <button class="ghost" id="stat" aria-expanded="false" aria-controls="panel">สถิติ</button>
+  </div>
+
+  <section class="panel" id="panel" hidden>
+    <h2>สถิติหน้านี้</h2><small>ข้อมูลตัวอย่าง · ยอดคลิกจะเพิ่มเมื่อคุณกดลิงก์</small>
+    <div class="kpi">
+      <div><b id="kv">0</b><span>การเข้าชม</span></div>
+      <div><b id="kc">0</b><span>คลิกทั้งหมด</span></div>
+      <div><b id="kr">0%</b><span>อัตราคลิก</span></div>
+    </div>
+    <div class="bars" id="bars"></div>
+    <div class="days"><span>จ</span><span>อ</span><span>พ</span><span>พฤ</span><span>ศ</span><span>ส</span><span>อา</span></div>
+    <div class="hb" id="hb"></div>
+  </section>
+
+  <p class="foot">แตะที่ว่างหรือรูปแมวเพื่อปล่อยอุ้งเท้า ดาว และหัวใจ</p>
+</main>
+
+<dialog id="dlg">
+  <h2>มาคุยกัน</h2>
+  <small style="color:var(--mute)">เลือกเรื่องที่สนใจ แล้วทักผ่านช่องทางที่สะดวก</small>
+  <div class="opts" id="opts"></div>
+  <div class="dl">
+    <button id="cmsg">คัดลอกข้อความทักทาย</button>
+    <a href="https://instagram.com/khene_cat" target="_blank" rel="noopener">ทักทาง Instagram</a>
+    <a href="https://www.facebook.com/Khene1267" target="_blank" rel="noopener">ทักทาง Facebook</a>
+    <button id="cx">ปิด</button>
+  </div>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const L=[
+ {name:"Instagram",h:"@khene_cat",u:"https://instagram.com/khene_cat",c:"",n:128,ic:"IG"},
+ {name:"TikTok",h:"@khene_tt2228",u:"https://www.tiktok.com/@khene_tt2228",c:"g",n:96,ic:"TT"},
+ {name:"TikTok",h:"@khene.sipaserd",u:"https://www.tiktok.com/@khene.sipaserd",c:"",n:74,ic:"TT"},
+ {name:"Facebook",h:"@Khene1267",u:"https://www.facebook.com/Khene1267",c:"g",n:52,ic:"f"}
+];
+const VIEWS=2481,WEEK=[18,32,27,45,38,61,52];
+const $=id=>document.getElementById(id);
+const fmt=n=>n.toLocaleString("en-US");
+let tt;function toast(m){const t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),1800)}
+async function copy(s){try{await navigator.clipboard.writeText(s);return true}catch(e){try{const a=document.createElement("textarea");a.value=s;document.body.appendChild(a);a.select();const ok=document.execCommand("copy");a.remove();return ok}catch(e2){return false}}}
+const pageUrl=()=>location.href.split("#")[0];
+
+/* links */
+const nav=$("links");
+L.forEach((l,i)=>{
+  const a=document.createElement("a");a.className="link "+l.c;a.href=l.u;a.target="_blank";a.rel="noopener";a.style.animationDelay=(0.15+i*0.08)+"s";
+  a.innerHTML='<span class="badge">'+l.ic+'</span><span class="t"><b>'+l.name+'</b><span>'+l.h+'</span></span><span class="chip" title="จำนวนคลิก">'+l.n+'</span>';
+  a.addEventListener("click",()=>{l.n++;const c=a.querySelector(".chip");c.textContent=l.n;c.classList.add("bump");setTimeout(()=>c.classList.remove("bump"),200);renderStats(false)});
+  nav.appendChild(a);
+});
+
+/* stats */
+const bars=$("bars");WEEK.forEach(v=>{const i=document.createElement("i");i.title=v+" คลิก";bars.appendChild(i)});
+function renderStats(anim){
+  const tot=L.reduce((s,l)=>s+l.n,0),mx=Math.max(...L.map(l=>l.n));
+  $("kv").textContent=fmt(VIEWS);$("kc").textContent=fmt(tot);$("kr").textContent=(tot/VIEWS*100).toFixed(1)+"%";
+  $("hb").innerHTML=L.map(l=>'<div><em>'+l.h+'</em><u><s style="width:'+(l.n/mx*100)+'%"></s></u><b>'+l.n+'</b></div>').join("");
+  if(anim){const m=Math.max(...WEEK);[...bars.children].forEach((b,i)=>{b.style.height="0";requestAnimationFrame(()=>requestAnimationFrame(()=>b.style.height=(WEEK[i]/m*100)+"%"))})}
+}
+$("stat").addEventListener("click",e=>{const p=$("panel"),open=p.hidden;p.hidden=!open;e.currentTarget.setAttribute("aria-expanded",open);if(open){renderStats(true);p.scrollIntoView({behavior:"smooth",block:"nearest"})}});
+
+/* share / copy */
+$("copy").addEventListener("click",async()=>toast(await copy(pageUrl())?"คัดลอกลิงก์แล้ว":"คัดลอกไม่สำเร็จ ลองคัดลอกจากแถบที่อยู่"));
+$("share").addEventListener("click",async()=>{
+  if(navigator.share){try{await navigator.share({title:"Khene Sipaserd",text:"Hi Everyone My name is Khene",url:pageUrl()});return}catch(e){if(e&&e.name==="AbortError")return}}
+  toast(await copy(pageUrl())?"คัดลอกลิงก์แล้ว นำไปแชร์ได้เลย":"แชร์ไม่สำเร็จ")
+});
+
+/* contact dialog */
+const P=["จ้างงาน","ร่วมงาน","ถามเรื่องแมว","ทักทาย"];let pick=P[0];
+const opts=$("opts");P.forEach((p,i)=>{const b=document.createElement("button");b.className="opt";b.textContent=p;b.setAttribute("aria-pressed",i===0);b.onclick=()=>{pick=p;[...opts.children].forEach(x=>x.setAttribute("aria-pressed",x===b))};opts.appendChild(b)});
+$("cta").onclick=()=>{try{$("dlg").showModal()}catch(e){$("dlg").setAttribute("open","")}};
+$("cx").onclick=()=>$("dlg").close();
+$("cmsg").onclick=async()=>toast(await copy("สวัสดี คุณ Khene ฉันสนใจเรื่อง "+pick+" อยากคุยรายละเอียดเพิ่มเติมค่ะ/ครับ")?"คัดลอกข้อความแล้ว":"คัดลอกไม่สำเร็จ");
+
+/* theme */
+$("theme").onclick=()=>{const r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;r.dataset.theme=dark?"light":"dark"};
+
+/* particles: paws, stars, hearts */
+const cv=$("fx"),cx=cv.getContext("2d"),dpr=Math.min(devicePixelRatio||1,2),reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+let W,H;function rs(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}
+addEventListener("resize",rs);rs();
+const COL=["#9B7FD0","#8DBF88","#C7A8E8","#E3CF8F"],TYPES=["paw","star","heart"];
+function shape(t,s){
+  cx.beginPath();
+  if(t==="paw"){cx.ellipse(0,s*.35,s*.55,s*.45,0,0,7);[[-.75,-.1],[-.27,-.6],[.27,-.6],[.75,-.1]].forEach(([x,y])=>{cx.moveTo(x*s+s*.2,y*s);cx.ellipse(x*s,y*s,s*.2,s*.27,0,0,7)})}
+  else if(t==="star"){for(let i=0;i<10;i++){const r=i%2?s*.45:s,a=-Math.PI/2+i*Math.PI/5;cx[i?"lineTo":"moveTo"](Math.cos(a)*r,Math.sin(a)*r)}cx.closePath()}
+  else{cx.moveTo(0,s*.4);cx.bezierCurveTo(-s*1.2,-s*.2,-s*.5,-s*1.1,0,-s*.4);cx.bezierCurveTo(s*.5,-s*1.1,s*1.2,-s*.2,0,s*.4)}
+  cx.fill();
+}
+const ps=[];
+function amb(init){ps.push({x:Math.random()*W,y:init?Math.random()*H:H+30,vx:0,vy:-(.25+Math.random()*.45),w:Math.random()*6,s:8+Math.random()*10,t:TYPES[Math.random()*3|0],c:COL[Math.random()*4|0],r:Math.random()*6,vr:(Math.random()-.5)*.02,a:.28,life:1e9,amb:1})}
+function burst(x,y,n){for(let i=0;i<n;i++){const a=Math.random()*6.28,v=2+Math.random()*3.5;ps.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v-1.5,s:9+Math.random()*10,t:TYPES[Math.random()*3|0],c:COL[Math.random()*4|0],r:Math.random()*6,vr:(Math.random()-.5)*.2,a:.9,life:0,max:70+Math.random()*30})}}
+if(!reduce)for(let i=0;i<16;i++)amb(true);
+function tick(){
+  cx.clearRect(0,0,W,H);
+  for(let i=ps.length-1;i>=0;i--){const p=ps[i];
+    if(p.amb){p.w+=.02;p.x+=Math.sin(p.w)*.4;p.y+=p.vy;if(p.y<-30){ps.splice(i,1);amb(false);continue}}
+    else{p.life++;p.vy+=.12;p.vx*=.985;p.x+=p.vx;p.y+=p.vy;p.a=.9*(1-p.life/p.max);if(p.life>=p.max){ps.splice(i,1);continue}}
+    p.r+=p.vr;cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.globalAlpha=Math.max(p.a,0);cx.fillStyle=p.c;shape(p.t,p.s);cx.restore();
+  }
+  requestAnimationFrame(tick);
+}
+tick();
+addEventListener("pointerdown",e=>{if(e.target.closest("dialog"))return;burst(e.clientX,e.clientY,reduce?0:9)});
+$("av").addEventListener("click",e=>{const r=e.currentTarget.getBoundingClientRect();if(!reduce)burst(r.left+r.width/2,r.top+r.height/2,16)});
+</script>
+</body>
+</html>
